@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>Vue Basic</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+        <style>
+            .one{
+                color: green;
+            }
+            .two{
+                text-decoration: line-through;
+            }
+            .canvas{
+                height: 300px;
+                width: 300px;
+                margin-top: 20px;
+                background: #ddd;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Vue Basics</h1>
+
+        <!-- Using v-bind or : to bind Vue's object-->
+        <div id="app">
+            <h2>{{ title }}</h2>
+            <p>{{ greet('morning') }}</p>
+            <a :href="url"></a>
+            <div :class="classes">Classes from Instances</div>
+            <input type="text" :value="name">
+        </div>
+
+        <!-- Using v-on or @ to bind event -->
+        <div id="app2">
+            <p>I earn {{ wage }} per hour</p>
+            <button @click="changeWage(1)">Increase wage by 1</button>
+            <button @click="changeWage(-1)">Decrease wage by 1</button>
+            <button @dblclick="changeWage(5)">Double click, increase wage by 5</button>
+            <button @dblclick="changeWage(-5)">Double click, decrease wage by 5</button>
+        </div>
+
+        <div id="app3">
+            <button @click="logEvent">Log Event</button>
+            <div class="canvas" @mousemove="logCoords">{{ coords.x }}, {{coords.y}}</div>
+        </div>
+        
+        <!-- Using v-model do two way data binding -->
+        <div id="app4">
+            <p>{{ name }}</p>
+            <input type="text" v-model="name" placeholder="input  your name here">
+        </div>
+
+        <!-- Event modifier -->
+        <div id="app5">
+            <h2>{{ title }}</h2>
+            <button @click.alt="logMessage">alt-click me</button>
+            <button @click.shift="logMessage">shift-click me</button>
+            <a href="http://www.google.com" @click.prevent="logMessage">Google</a>
+        </div>
+
+        <!--Conditinal rendering -->
+        <div id="app6">
+            <h2>{{ title }}</h2>
+            <p v-if="showName">{{ name }}</p>
+            <p v-else-if="showAge">{{ age }}</p>
+            <button @click="toggleName">ShowName: {{ showName }}</button>
+            <button @click="toggleAge">ShowAge: {{ showAge }}</button>
+        </div>
+
+        <!-- Looping data -->
+        <div id="app7">
+            <h2>{{ title }}</h2>
+            <ul>
+                <li v-for="item in items">{{ item }}</li>
+            </ul>
+            <div v-for="(ninja, index) in ninjas">
+                <p>{{ index }} - {{ ninja.name }}</p>
+                <p>{{ ninja.age }}</p>
+                <p>{{ ninja.belt }}</p>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
