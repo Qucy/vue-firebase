@@ -1,5 +1,5 @@
 # vue-firebase
-This is a repo for learning vue and firebase applications
+This is a repo for learning vue-firebase applications
 
 [vue-firebase course](https://www.udemy.com/build-web-apps-with-vuejs-firebase/learn/v4/content)
 
