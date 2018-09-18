@@ -24,4 +24,5 @@ This is a repo for learning vue-firebase applications
 ## Lesson 1 - Vue CLI
 - Install [node js](https://nodejs.org/en/) and npm
 - Install Vue CLI via command 'npm install --global vue-cli'
-- Create your Vue project via command 'vue init webpack-simple myproject'
+- Create Vue project via command 'vue init webpack-simple myproject'
+- Install all the necessary packages via command 'npm install'
