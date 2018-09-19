@@ -55,7 +55,21 @@ This is a repo for learning vue-firebase applications
 ? Setup e2e tests with Nightwatch? No
 ? Should we run npm install for you after the project has been created? (recommended) npm
 ```
-- Understanding routing
+- Understanding routing, the routings store in file index.js
+- Using tag router-link to jump to other components
+- Using router paramerters to pass data
+- Watching the $router object to update some data automatically
+- Using $router.push or router.go jump to other pages or components
+- Understand why there is a hash symbol in the link and use history mode to remove it for dev ENV
+- Understand class router-link-exact-active, means the link we current at.
+- Understand class router-link-active, means we only at sublink of current link.
+- Make use of above 2 classes to set up some style
+
+## Lesson 3 - Project: Ninja Smoothies
+- TBC
+
+
+
 
 
 
