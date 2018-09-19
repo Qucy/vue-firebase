@@ -43,8 +43,19 @@ This is a repo for learning vue-firebase applications
 - Using computed properties to represent your data without changing your original data
 
 ## Lesson 2 - Vue router
-- Install
-
+- Install project via command 'vue init webpack routing' and below is the choice i made when creating project
+```
+? Project name routing
+? Project description A Vue.js project
+? Author tracyqucy@gmail.com
+? Vue build standalone
+? Install vue-router? Yes
+? Use ESLint to lint your code? No
+? Set up unit tests No
+? Setup e2e tests with Nightwatch? No
+? Should we run npm install for you after the project has been created? (recommended) npm
+```
+- Understanding routing
 
 
 
