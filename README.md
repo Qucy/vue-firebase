@@ -29,15 +29,15 @@ This is a repo for learning vue-firebase applications
 - Run the project follow the readme file
 - Understanding Vue components, usually the file name end with .vue
 - Vue component usually contains a template, script and stylesheet sometimes.
-- Vue component use data function instead of data object, in order to protect data(each component will have a copy of data).
+- Vue component use data function instead of object, in order to protect data(will return a copy of data).
 - main.js is entrance file for Vue
 - App.vue is root component for Vue
 - How to nesting components into root component
 - Scoped CSS
 - Passing data to other components via props
 - Custom events, using emit to pass event through each component
-- (Vue components Life-cycle hooks)[https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram]
-- Making request and getting data with (Axios)[https://jsonplaceholder.typicode.com/]
+- [Vue components Life-cycle hooks](https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram)
+- Making request and getting data with [Axios](https://jsonplaceholder.typicode.com/)
 - Before using axios need to install it via command 'npm install axios --save'
 - Using filters to format your output like slice your string body
 - Using computed properties to represent your data without changing your original data
