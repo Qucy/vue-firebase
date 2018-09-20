@@ -66,8 +66,21 @@ This is a repo for learning vue-firebase applications
 - Make use of above 2 classes to set up some style
 
 ## Lesson 3 - Project: Ninja Smoothies
-- TBC
-
+- Create a new project called ninja-smoothies via command 'vue init webpack ninja-smoothies'
+```
+? Project name ninja-smoothies
+? Project description A Vue.js project
+? Author tracyqucy@gmail.com
+? Vue build standalone
+? Install vue-router? Yes
+? Use ESLint to lint your code? No
+? Set up unit tests No
+? Setup e2e tests with Nightwatch? No
+? Should we run `npm install` for you after the project has been created? (recommended) npm
+```
+- Remove uncessary code and import [Materializecss](https://materializecss.com/) as stylesheet
+- Login to [firebase console](https://console.firebase.google.com/) and create documents via filestore database
+- Integrate firebase with Vue and learning CRUD via firestore API
 
 
 
