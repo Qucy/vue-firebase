@@ -80,7 +80,7 @@ This is a repo for learning vue-firebase applications
 ```
 - Remove uncessary code and import [Materializecss](https://materializecss.com/) as stylesheet
 - Login to [firebase console](https://console.firebase.google.com/) and create documents via filestore database
-- Integrate firebase with Vue and learning CRUD via firestore API
+- Integrate firebase with Vue and apply CRUD via firestore API
 
 
 
