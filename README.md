@@ -79,6 +79,7 @@ This is a repo for learning vue-firebase applications
 ? Should we run `npm install` for you after the project has been created? (recommended) npm
 ```
 - Remove uncessary code and import [Materializecss](https://materializecss.com/) as stylesheet
+- Install firebase via npm
 - Login to [firebase console](https://console.firebase.google.com/) and create documents via filestore database
 - Integrate firebase with Vue and apply CRUD via firestore API
 
