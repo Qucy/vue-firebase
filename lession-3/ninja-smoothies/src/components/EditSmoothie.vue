@@ -47,7 +47,6 @@ export default {
                 });
             }
         )
-        // this.smoothie = {title: 'Ninja Brew', slug: 'ninjja-brew', ingredients: ['bananas', 'coffee', 'milk']}
     },
     methods: {
         AddIng: function() {

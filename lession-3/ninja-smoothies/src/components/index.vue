@@ -32,7 +32,7 @@ export default {
   methods: {
     deleteSmoothie: function(id) {
       // delete from firestore
-      db.collection('smoothies').doc(id).delete()
+      db.collection('soomthies').doc(id).delete()
       .then(() => {
         this.smoothies = this.smoothies.filter(smoothie =>{
           return smoothie.id != id;
@@ -54,8 +54,6 @@ export default {
         this.smoothies.push(smoothie)
       });
     })
-    // this.smoothies.push({title: 'Ninja Brew', slug: 'ninjja-brew', ingredients: ['bananas', 'coffee', 'milk']})
-    // this.smoothies.push({title: 'Morning Mood', slug: 'morning-mood', ingredients: ['mango', 'lime', 'juice']})
   }
 }
 </script>
