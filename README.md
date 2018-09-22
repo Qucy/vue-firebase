@@ -83,6 +83,7 @@ This is a repo for learning vue-firebase applications
 - Install slugify via command 'npm install slugify --save'
 - Login to [firebase console](https://console.firebase.google.com/) and create documents via filestore database
 - Integrate firebase with Vue and apply CRUD via firestore API
+- [Project](https://vue-ninja-smoothies-1357b.firebaseapp.com/#/)
 
 
 
