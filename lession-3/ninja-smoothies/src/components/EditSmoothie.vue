@@ -38,7 +38,7 @@ export default {
     },
     created() {
         // let ref = db.collection('smoothie').doc(id) retrieve by doc id
-        let ref = db.collection('smoothie').where('slug', '==', this.$route.params.smoothie_slug)
+        let ref = db.collection('soomthies').where('slug', '==', this.$route.params.smoothie_slug)
         ref.get().then(
             snapshot => {
                 snapshot.forEach(doc => {
@@ -74,7 +74,7 @@ export default {
                     lower: true
                 })
                 // push data to firestore
-                db.collection('smmoothies').doc(this.smoothie.id).update({
+                db.collection('soomthies').doc(this.smoothie.id).update({
                     title: this.smoothie.title,
                     ingredients: this.smoothie.ingredients,
                     slug: this.smoothie.slug

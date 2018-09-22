@@ -49,7 +49,7 @@ export default {
                     lower: true
                 })
                 // push data to firestore
-                db.collection('smmoothies').add({
+                db.collection('soomthies').add({
                     title: this.title,
                     ingredients: this.ingredients,
                     slug: this.slug

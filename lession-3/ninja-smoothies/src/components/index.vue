@@ -45,7 +45,7 @@ export default {
   },
   created() {
     // retrieve data from firestore
-    db.collection('smoothies').get()
+    db.collection('soomthies').get()
     .then(snapshot => {
       snapshot.forEach(doc => {
         // console.log(doc.data(), doc.id)
