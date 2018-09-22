@@ -10,6 +10,11 @@
           </li>
         </ul>
       </div>
+      <span class="btn-floating btn-large halfway-fab blue">
+        <router-link :to="{name: 'EditSmoothie', params: {smoothie_slug: smoothie.slug}}">
+          <i class="material-icons edit">edit</i>
+        </router-link>
+      </span>
     </div>
   </div>
 </template>
@@ -27,15 +32,11 @@ export default {
   methods: {
     deleteSmoothie: function(id) {
       // delete from firestore
-      // db.collection('smoothies').doc(id).delete()
-      // .then(() => {
-      //   this.smoothies = this.smoothies.filter(smoothie =>{
-      //     return smoothie.id != id;
-      //   })
-      // })
-
-      this.smoothies = this.smoothies.filter(smoothie =>{
-        return smoothie.id != id;
+      db.collection('smoothies').doc(id).delete()
+      .then(() => {
+        this.smoothies = this.smoothies.filter(smoothie =>{
+          return smoothie.id != id;
+        })
       })
     },
     addSmoothie: function() {
@@ -44,17 +45,17 @@ export default {
   },
   created() {
     // retrieve data from firestore
-    // db.collection('smoothies').get()
-    // .then(snapshot => {
-    //   snapshot.forEach(doc => {
-    //     // console.log(doc.data(), doc.id)
-    //     let smoothie = doc.data()
-    //     smoothie.id = doc.id
-    //     this.smoothies.push(smoothie)
-    //   });
-    // })
-    this.smoothies.push({title: 'Ninja Brew', slug: 'ninjja-brew', ingredients: ['bananas', 'coffee', 'milk']})
-    this.smoothies.push({title: 'Morning Mood', slug: 'morning-mood', ingredients: ['mango', 'lime', 'juice']})
+    db.collection('smoothies').get()
+    .then(snapshot => {
+      snapshot.forEach(doc => {
+        // console.log(doc.data(), doc.id)
+        let smoothie = doc.data()
+        smoothie.id = doc.id
+        this.smoothies.push(smoothie)
+      });
+    })
+    // this.smoothies.push({title: 'Ninja Brew', slug: 'ninjja-brew', ingredients: ['bananas', 'coffee', 'milk']})
+    // this.smoothies.push({title: 'Morning Mood', slug: 'morning-mood', ingredients: ['mango', 'lime', 'juice']})
   }
 }
 </script>
