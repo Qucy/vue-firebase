@@ -38,9 +38,6 @@ export default {
           return smoothie.id != id;
         })
       })
-    },
-    addSmoothie: function() {
-
     }
   },
   created() {
