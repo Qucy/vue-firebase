@@ -83,9 +83,23 @@ This is a repo for learning vue-firebase applications
 - Install slugify via command 'npm install slugify --save'
 - Login to [firebase console](https://console.firebase.google.com/) and create documents via filestore database
 - Integrate firebase with Vue and apply CRUD via firestore API
-- [Project](https://vue-ninja-smoothies-1357b.firebaseapp.com/#/)
+- [Project: Ninja Smoothies](https://vue-ninja-smoothies-1357b.firebaseapp.com/#/)
 
 
+## Lesson 4 - Project: Ninja Chat
+- Create a new project called nijia-chat via command 'vue init webpack nijia-chat'
+- Rename component HelloWorld to Welcome and create component NewMessage and Chat
+- Create Vue router for Chat component and use router guards to filter invalid request
+- Integrate with firestore and save new message into firebase
+- Set up firebase listener to receive data change event
+- Format time use [momentjs](https://momentjs.com/)
+- Install vue plugin via command 'npm install vue-chat-scroll --save' so that scroll to the bottom at the beginning
+- Set Vue mode to 'history' so that '#' will not show up in the link
+- Deploy app the firestore
+- [Project: Ninja Chat](https://ninja-chat-d4c11.firebaseapp.com/Chat)
+
+## Lesson 5 - Project: xxx
+- TBC
 
 
 
