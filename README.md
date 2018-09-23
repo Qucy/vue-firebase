@@ -83,6 +83,7 @@ This is a repo for learning vue-firebase applications
 - Install slugify via command 'npm install slugify --save'
 - Login to [firebase console](https://console.firebase.google.com/) and create documents via filestore database
 - Integrate firebase with Vue and apply CRUD via firestore API
+- Install firebase plugin and use firebase command to deploy web app to firebase
 - [Project: Ninja Smoothies](https://vue-ninja-smoothies-1357b.firebaseapp.com/#/)
 
 
@@ -96,7 +97,7 @@ This is a repo for learning vue-firebase applications
 - Install vue plugin via command 'npm install vue-chat-scroll --save' so that scroll to the bottom at the beginning
 - Set Vue mode to 'history' so that '#' will not show up in the link
 - Deploy app the firestore
-- [Project: Ninja Chat](https://ninja-chat-d4c11.firebaseapp.com/Chat)
+- [Project: Ninja Chat](https://ninja-chat-d4c11.firebaseapp.com/)
 
 ## Lesson 5 - Project: xxx
 - TBC
