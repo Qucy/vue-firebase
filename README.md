@@ -99,8 +99,13 @@ This is a repo for learning vue-firebase applications
 - Deploy app the firestore
 - [Project: Ninja Chat](https://ninja-chat-d4c11.firebaseapp.com/)
 
-## Lesson 5 - Project: xxx
-- TBC
-
+## Lesson 5 - Project: Geo nijia
+- Create a new project called geo-nijias via command 'vue init webpack geo-nijia'
+- Integrate with firebase
+- Learn how to use [Google API](https://console.developers.google.com/) and [Google Map](https://cloud.google.com/maps-platform/)
+- Learn how to use firebase to do authentication
+- Learn some basic operation for Google Map AIP
+- Another way to create router protector
+- Deploy you application to firestore
 
 
